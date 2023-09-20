@@ -1,0 +1,29 @@
+.aboutcontainer {
+  padding: 120px 0;
+}
+
+.aboutlist {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.aboutlist-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.about-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate, #8e8f99);
+  background: var(--cloud, #f4f4fd);
+}
+
+.aboutheader {
+  margin-bottom: 8px;
+}
