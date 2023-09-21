@@ -1,35 +1,49 @@
 .hero {
-  background-color: #2e2f42;
-  max-width: 1440px;
+  background-color: var(--dark);
+  max-width: 320px;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/hero/people-office-d.jpg);
+    url(/images/hero/people-office-m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 188px 0;
+  padding: 72px 16px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-devise-pixel-ratio: 2) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/hero/people-office-m@2x.jpg);
+  }
 }
 
 .herotitle {
-  color: #ffffff;
-  font-size: 56px;
-  line-height: 1.07;
+  color: var(--white-background);
+  font-size: 36px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  max-width: 210px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
+  text-transform: capitalize;
 }
 
 .herobutton {
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--white-background);
+  background-color: var(--primary-brand);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -48,5 +62,69 @@
 
 .herobutton:hover,
 .herobutton:focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/hero/people-office-t.jpg);
+    padding: 112px 136px;
+  }
+
+  .herotitle {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: none;
+    min-width: 496px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-devise-pixel-ratio: 2) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/hero/people-office-t@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    max-width: 1440px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/hero/people-office-d.jpg);
+    padding: 188px;
+  }
+
+  .herotitle {
+    max-width: 510px;
+    min-width: 496px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px),
+  screen and (min-devise-pixel-ratio: 2) and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/hero/people-office-d@2x.jpg);
+  }
 }
