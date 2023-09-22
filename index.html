@@ -66,6 +66,7 @@
         </button>
       </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="container">
@@ -493,10 +494,10 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-logo">
-          <a class="logo footerlogo" href="./index.html"
+          <a class="logo" href="./index.html"
             >Web<span class="spanlogofooter">Studio</span></a
           >
           <p class="paragraphfooter">
@@ -557,9 +558,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
-
-    <!-- <div class="containermodal">
+    </footer>
+    <!-- used class is-open -->
+    <div class="containermodal">
       <div class="modal">
         <button class="closebutton" type="button">
           <svg class="close-icon" width="8" height="8">
@@ -646,8 +647,7 @@
         </form>
       </div>
     </div>
-     -->
-    <!-- Mobile menu -->
+    <!-- used class is-open -->
     <div class="mobile-menu">
       <button class="mobile-menu-close-btn">
         <svg
@@ -662,37 +662,32 @@
       <nav class="mobile-menu-navi">
         <ul class="mobile-menulist">
           <li class="mobile-menulist-item">
-            <a class="mobile-navlink" href="./index.html">Studio</a>
+            <a class="mobile-navlink curent" href="./index.html">Studio</a>
           </li>
           <li class="mobile-menulist-item">
             <a class="mobile-navlink" href="">Portfolio</a>
           </li>
           <li class="mobile-menulist-item">
-            <a class="mobile-navlink link" href="">Contacts</a>
+            <a class="mobile-navlink" href="">Contacts</a>
           </li>
         </ul>
       </nav>
       <div class="mobile-menu-contacts">
         <address class="mobile-menu-addres">
           <ul class="mobile-addreslist">
-            <li>
-              <a class="addres" href="mailto:info@devstudio.com"
+            <li class="mobile-addreslist-item">
+              <a class="mobile-addres" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-addreslist-item">
+              <a class="mobile-addres" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a class="addres" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
           </ul>
         </address>
-        <ul class="teamcard-icons-list">
-          <li class="teamcard-icons-item">
-            <a class="icons-item" href="https://www.facebook.com/">
-              <svg class="icons-item-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
+        <ul class="mobile-icons-list">
           <li class="teamcard-icons-item">
             <a class="icons-item" href="https://www.instagram.com/">
               <svg class="icons-item-icon" width="16" height="16">
@@ -701,16 +696,24 @@
             </a>
           </li>
           <li class="teamcard-icons-item">
-            <a class="icons-item" href="https://www.linkedin.com/">
+            <a class="icons-item" href="https://www.x.com/">
               <svg class="icons-item-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-linkedin"></use>
+                <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="teamcard-icons-item">
-            <a class="icons-item" href="https://www.x.com/">
+            <a class="icons-item" href="https://www.facebook.com/">
               <svg class="icons-item-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-twitter"></use>
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="teamcard-icons-item">
+            <a class="icons-item" href="https://www.linkedin.com/">
+              <svg class="icons-item-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </a>
           </li>

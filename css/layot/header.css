@@ -29,6 +29,8 @@
 
   .mobile-menu {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     left: 0;
     top: 0;
     z-index: 999;
@@ -99,42 +101,66 @@
     text-transform: capitalize;
   }
 
-  .mobile-menu-contacts {
-    margin-top: auto;
+  .mobile-navlink {
+    padding: 24px 0;
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* .teamcard-icons-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
+  .mobile-navlink:focus {
+    color: var(--pressed-state);
+  }
 
-.teamcard-icons-item {
-  width: 40px;
-  height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .curent {
+    color: #404bbf;
+    position: relative;
+  }
 
-.icons-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .mobile-menu-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
-.icons-item-icon {
-  fill: #f4f4fd;
-}
+  .mobile-menu-addres {
+    margin-left: 16px;
+  }
 
-.icons-item:hover,
-.icons-item:focus {
-  background-color: #404bbf;
-} */
+  .mobile-addreslist {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .mobile-addreslist-item {
+    font-size: 20px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+
+  .mobile-addres {
+    color: var(--dark);
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-addres:focus,
+  .mobile-addres:hover {
+    color: var(--pressed-state);
+  }
+
+  .mobile-icons-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 16px;
+  }
 }
 
 .logo {
@@ -172,13 +198,10 @@
     justify-content: space-between;
   }
 
-  .logo {
-    margin-right: 120px;
-  }
-
   .menulist {
     display: flex;
     gap: 40px;
+    margin-left: 120px;
   }
 
   .menulist-item {
