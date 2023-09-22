@@ -94,7 +94,6 @@
   letter-spacing: 0.04em;
   color: var(--sbt-text);
   display: block;
-  margin-bottom: 4px;
 }
 
 .input-item {
@@ -185,6 +184,7 @@
 .pryvacylink {
   color: var(--primary-brand);
   text-decoration-line: underline;
+  margin-left: 18px;
 }
 
 .modalsubmint-buttom {

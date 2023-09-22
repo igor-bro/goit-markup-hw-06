@@ -6,13 +6,13 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/hero/people-office-m.jpg);
+    url(../../images/hero/people-office-m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 72px 16px;
   margin-left: auto;
   margin-right: auto;
+  padding: 72px 0px 72px;
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -24,7 +24,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero/people-office-m@2x.jpg);
+      url(../../images/hero/people-office-m@2x.jpg);
   }
 }
 
@@ -73,14 +73,13 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero/people-office-t.jpg);
-    padding: 112px 136px;
+      url(../../images/hero/people-office-t.jpg);
+    padding: 112px 0px 112px;
   }
 
   .herotitle {
     font-size: 56px;
     line-height: 1.07;
-    max-width: none;
     min-width: 496px;
   }
 }
@@ -94,7 +93,8 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero/people-office-t@2x.jpg);
+      url(../../images/hero/people-office-t@2x.jpg);
+    padding: 188px 0px 188px;
   }
 }
 
@@ -106,8 +106,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero/people-office-d.jpg);
-    padding: 188px;
+      url(../../images/hero/people-office-d.jpg);
   }
 
   .herotitle {
@@ -125,6 +124,6 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero/people-office-d@2x.jpg);
+      url(../../images/hero/people-office-d@2x.jpg);
   }
 }

@@ -33,6 +33,10 @@
     column-gap: 24px;
   }
 
+  .aboutheader {
+    text-align: left;
+  }
+
   .aboutlist-item {
     flex-basis: calc((100% - 24px) / 2);
   }

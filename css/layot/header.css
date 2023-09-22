@@ -39,6 +39,7 @@
     background-color: var(--white-background);
     transform: translateX(100%);
     transition: transform 250ms ease-out;
+    padding: 72px 24px 40px 16px;
   }
 
   .mobile-menu.is-open {
@@ -82,11 +83,6 @@
     fill: var(--white-background);
   }
 
-  .mobile-menu-navi {
-    margin-top: 74px;
-    margin-left: 16px;
-  }
-
   .mobile-menulist {
     display: flex;
     flex-direction: column;
@@ -102,7 +98,6 @@
   }
 
   .mobile-navlink {
-    padding: 24px 0;
     color: var(--dark);
     font-weight: 500;
     font-size: 36px;
@@ -115,21 +110,11 @@
     color: var(--pressed-state);
   }
 
-  .curent {
-    color: var(--pressed-state);
-    position: relative;
-  }
-
   .mobile-menu-contacts {
     display: flex;
     flex-direction: column;
     gap: 48px;
     margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  .mobile-menu-addres {
-    margin-left: 16px;
   }
 
   .mobile-addreslist {
@@ -148,6 +133,7 @@
   .mobile-addres {
     color: var(--dark);
     cursor: pointer;
+    font-style: normal;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -159,7 +145,11 @@
   .mobile-icons-list {
     display: flex;
     gap: 40px;
-    margin-left: 16px;
+  }
+
+  .curent {
+    color: var(--pressed-state);
+    position: relative;
   }
 }
 

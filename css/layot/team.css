@@ -1,6 +1,6 @@
 .team {
   background-color: var(--light);
-  padding: 96px 0;
+  padding: 96px 0px;
 }
 
 .teamheader {
@@ -80,6 +80,10 @@
 }
 
 @media screen and (min-width: 1158px) {
+  .team {
+    padding: 120px 0px;
+  }
+
   .teamlist {
     flex-direction: row;
     flex-wrap: nowrap;
