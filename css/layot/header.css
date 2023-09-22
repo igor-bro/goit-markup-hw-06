@@ -116,7 +116,7 @@
   }
 
   .curent {
-    color: #404bbf;
+    color: var(--pressed-state);
     position: relative;
   }
 
@@ -211,7 +211,7 @@
 
   .navlink {
     padding: 24px 0;
-    color: #434455;
+    color: var(--text);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -230,7 +230,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: #404bbf;
+    background-color: var(--pressed-state);
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -238,7 +238,7 @@
 
   .navlink:hover,
   .navlink:focus {
-    color: #404bbf;
+    color: var(--pressed-state);
   }
 
   .addreslist {
@@ -248,7 +248,7 @@
   }
 
   .addres {
-    color: #434455;
+    color: var(--text);
     display: flex;
     font-style: normal;
     font-size: 12px;
@@ -259,7 +259,7 @@
 
   .addres:hover,
   .addres:focus {
-    color: #404bbf;
+    color: var(--pressed-state);
   }
 }
 
@@ -280,7 +280,7 @@
   }
 
   .container-header {
-    border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid var(--accent);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }

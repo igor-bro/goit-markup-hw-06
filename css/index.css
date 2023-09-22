@@ -1,7 +1,6 @@
 /* Base */
 @import './base/common.css';
 @import './base/container.css';
-@import './base/section.css';
 
 /* Layot */
 @import './layot/modal.css';

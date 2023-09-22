@@ -26,7 +26,7 @@
   padding: 72px 24px 24px 24px;
   width: 408px;
   min-height: 584px;
-  background-color: #fcfcfc;
+  background-color: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e7e9fc;
+  background-color: var(--accent);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
@@ -54,7 +54,7 @@
 
 .closebutton:hover,
 .closebutton:focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state);
   border: none;
 }
 
@@ -63,11 +63,11 @@
 }
 
 .closebutton:hover > .close-icon {
-  fill: #ffffff;
+  fill: var(--white-background);
 }
 
 .closebutton:focus > .close-icon {
-  fill: #ffffff;
+  fill: var(--white-background);
 }
 
 .modalparagraph {
@@ -76,7 +76,7 @@
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark);
   margin-bottom: 16px;
 }
 
@@ -92,7 +92,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--sbt-text);
   display: block;
   margin-bottom: 4px;
 }
@@ -109,7 +109,7 @@
 }
 
 .input-item:focus {
-  border-color: #4d5ae5;
+  border-color: var(--pressed-state);
 }
 
 .item-icon {
@@ -121,7 +121,7 @@
 }
 
 .input-item:focus + .item-icon {
-  fill: #4d5ae5;
+  fill: var(--pressed-state);
 }
 
 .comment-container {
@@ -146,18 +146,15 @@
 }
 
 .inputcomment:focus {
-  border-color: #4d5ae5;
+  border-color: var(--primary-brand);
 }
 
 .inputcomment::placeholder {
-  color: #8e8f99;
+  color: var(--sbt-text);
 }
 
 .pryvacy-container {
   margin-bottom: 24px;
-}
-
-.inputprivacy {
 }
 
 .privacycheckbox {
@@ -176,17 +173,17 @@
 }
 
 .inputprivacy:checked + .inputlabel > .privacycheckbox {
-  background-color: #404bbf;
+  background-color: var(--pressed-state);
   border: none;
-  fill: #f4f4fd;
+  fill: var(--light);
 }
 
 .inputprivacy:focus + .inputlabel > .privacycheckbox {
-  border-color: #404bbf;
+  border-color: var(--pressed-state);
 }
 
 .pryvacylink {
-  color: #4d5ae5;
+  color: var(--primary-brand);
   text-decoration-line: underline;
 }
 
@@ -196,13 +193,13 @@
   height: 56px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand);
   border: none;
   border-radius: 4px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--white-background);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
