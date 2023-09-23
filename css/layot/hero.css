@@ -94,7 +94,6 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../../images/hero/people-office-t@2x.jpg);
-    padding: 188px 0px 188px;
   }
 }
 
@@ -107,6 +106,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../../images/hero/people-office-d.jpg);
+    padding: 188px 0px 188px;
   }
 
   .herotitle {

@@ -258,6 +258,10 @@
     margin-right: 76px;
   }
 
+  .menulist {
+    margin-left: 0px;
+  }
+
   .addreslist {
     flex-direction: row;
     gap: 40px;
